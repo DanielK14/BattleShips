@@ -1,12 +1,17 @@
 import java.util.ArrayList;
 
-public class DotCom {
+public class BattleShip {
 	
 	private ArrayList<String> locationCells;
+	private String shipName;
 	int numOfHits = 0;
 	
 	public void setLocationCells(ArrayList<String> locs) {
 		locationCells = locs;
+	}
+	
+	public void setName(String name) {
+		shipName = name;
 	}
 	
 	public String checkYourSelf(String userInput) {
@@ -18,11 +23,11 @@ public class DotCom {
 			
 			if (locationCells.isEmpty()) {
 				result = "kill";
+				System.out.println("Killing blow! You destroyed " + shipName);
 			} else {
 				result = "hit";
 			}
 		}
-		System.out.println(result);
 		return result;
 	}
 }
