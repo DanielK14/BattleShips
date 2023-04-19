@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class SimpleDotComTestDrive {
 	
 	public static void main (String[] args) {
-		DotCom dot = new DotCom();
+		BattleShip dot = new BattleShip();
 		ArrayList<String> locations = new ArrayList<String>();
 		locations.add("2");
 		locations.add("3");
