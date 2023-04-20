@@ -18,7 +18,7 @@ public class BattleShipBust {
 		
 		System.out.println("Your goal is to sink three battle ships.");
 		System.out.println("The Normandy, the Pillar of Autumn and the Leviathan.");
-		System.out.println("Try to sink them all in the fewest number of guesses, note the coordinates range from a0 to g6");
+		System.out.println("Try to sink them all in the fewest number of guesses, note the coordinates range from a1 to g7");
 		
 		for (BattleShip battleShipToSet : battleShipsList ) {
 			ArrayList<String> newLocation = helper.placeBattleShip(3);

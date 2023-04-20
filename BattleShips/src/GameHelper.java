@@ -66,7 +66,7 @@ public class GameHelper {
 			column = coOrds[x] % gridLength;
 			temp = String.valueOf(alphabet.charAt(column));
 			
-			alphaCells.add(temp.concat(Integer.toString(row)));
+			alphaCells.add(temp.concat(Integer.toString(row+1)));
 			x++;
 		}
 		
