@@ -10,6 +10,10 @@ public class BattleShip {
 		locationCells = locs;
 	}
 	
+	public String getName() {
+		return shipName;
+	}
+	
 	public void setName(String name) {
 		shipName = name;
 	}
@@ -25,6 +29,7 @@ public class BattleShip {
 				result = "kill";
 				System.out.println("Killing blow! You destroyed " + shipName);
 			} else {
+				numOfHits++;
 				result = "hit";
 			}
 		}
