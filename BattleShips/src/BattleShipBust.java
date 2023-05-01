@@ -29,7 +29,11 @@ public class BattleShipBust {
 	private void startPlaying() {
 		while (!battleShipsList.isEmpty()) {
 			String userGuess = helper.getUserInput("Enter a guess");
-			checkUserGuess(userGuess);
+			if (helper.validateUserInput(userGuess)) {
+				checkUserGuess(userGuess);
+			}else {
+				System.out.println("Not valid coordinates");
+			}
 		}
 		finishGame();
 	}

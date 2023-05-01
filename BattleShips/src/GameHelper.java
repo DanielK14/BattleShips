@@ -72,4 +72,24 @@ public class GameHelper {
 		
 		return alphaCells;
 	}
+	
+	public boolean validateUserInput(String userInput) {
+		boolean validInput = true;
+		
+		if (userInput.length() != 2) {
+			validInput = false;
+		}else {
+			String firstCharacterString = String.valueOf(userInput.charAt(0));
+			String secondCharacterString = String.valueOf(userInput.charAt(1));
+			if(!firstCharacterString.matches(".*[abcdefg].*")) {
+				validInput = false;
+			}
+			
+			if (!secondCharacterString.matches(".*[1234567].*")) {
+				validInput = false;
+			}
+		}
+		
+		return validInput;
+	}
 }
